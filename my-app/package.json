@@ -4,16 +4,22 @@
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.1",
+    "@stripe/react-stripe-js": "^1.10.0",
+    "@stripe/stripe-js": "^1.35.0",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.1.1",
     "@testing-library/user-event": "^13.5.0",
-    "axios": "^0.27.0",
+    "axios": "^0.27.2",
     "classnames": "^2.3.1",
+    "firebase": "^9.9.1",
+    "formik": "^2.2.9",
     "logger": "^0.0.1",
     "node": "^17.7.2",
     "prop-types": "^15.8.1",
     "react": "^18.0.0",
+    "react-datepicker": "^4.8.0",
     "react-dom": "^18.0.0",
+    "react-google-button": "^0.7.2",
     "react-helmet": "^6.1.0",
     "react-jwt": "^1.1.6",
     "react-redux": "^8.0.1",
@@ -23,7 +29,8 @@
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.4.1",
     "url": "^0.11.0",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "yup": "^0.32.11"
   },
   "scripts": {
     "start": "react-scripts start",

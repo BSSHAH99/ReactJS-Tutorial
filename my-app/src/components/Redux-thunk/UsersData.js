@@ -12,7 +12,7 @@ function UsersData() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(fetchUsersRequest());
+    // dispatch(fetchUsersRequest());
     dispatch(featchUseres());
   }, []);
 

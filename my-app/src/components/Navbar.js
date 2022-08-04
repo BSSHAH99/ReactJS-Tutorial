@@ -269,6 +269,49 @@ export default function Navbar(props) {
                 <Link className="nav-link" to="/env">
                   .env File
                 </Link>
+              </li> 
+            
+              <li className="nav-item dropdown">
+                <a
+                  className="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Formik
+                </a>
+                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li className="nav-item">
+                    <Link className="dropdown-item" to="/formik">
+                    Formik
+                    </Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link className="dropdown-item" to="/formik-reusable-components">
+                    Reusable Components
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to="/formik-login">
+                      Login Formik
+                    </Link>
+                  </li>
+                  {/* <li>
+                    <Link
+                      className="dropdown-item"
+                      to="/formik-signup"
+                    >
+                      SignUp Formik
+                    </Link>
+                  </li> */}
+                </ul>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/payment-gateway">
+                PaymentGateway
+                </Link>
               </li>
             </ul>
             <button

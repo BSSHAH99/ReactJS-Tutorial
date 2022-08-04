@@ -49,6 +49,14 @@ import StudentProfile from "./JWT/StudentProfile";
 import { AllExam } from "./JWT/AllExam";
 import { Demo } from "./ReusableComponentsDemo/Demo";
 import Env from "./Env";
+import SingUp from "./Formik/SingUp";
+import FormikContainer from "./Formik/FormikContainer";
+import LoginFormik from "./Formik/Login";
+import SignUpFormik from "./Formik/SignUp";
+import HomeMain from "./Formik/context/HomeMain";
+import PaymentContainerMain from "../PaymentGateway/PaymentContainerMain";
+
+
 const LayzyAbout = React.lazy(() => import("./AboutUs"));
 const LayzyTextFrom = React.lazy(() => import("./TextFrom"));
 
@@ -299,6 +307,36 @@ function RouterNav() {
     {
       path: "/reusable-Components-demo",
       goto: <Demo />,
+      requireAuth: true,
+    },
+    {
+      path: "/formik",
+      goto: <SingUp/>,
+      requireAuth: true,
+    },  
+    {
+      path: "/formik-reusable-components",
+      goto: <FormikContainer/>,
+      requireAuth: true,
+    },
+    {
+      path: "/formik-login",
+      goto: <LoginFormik/>,
+      requireAuth: true,
+    },
+    {
+      path: "/formik-signup",
+      goto: <SignUpFormik/>,
+      requireAuth: true,
+    },
+    {
+      path: "/formik-home",
+      goto: <HomeMain/>,
+      requireAuth: true,
+    },
+    {
+      path: "/payment-gateway",
+      goto: <PaymentContainerMain/>,
       requireAuth: true,
     },
     {
